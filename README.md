@@ -132,6 +132,7 @@ _Add screenshots of your UI here:_
 
 Project report and ER diagram are available in:
 ```
+https://github.com/Abdullah-Al-Mahamud/Esports-Tournament-Management-/blob/main/GroupNo%2016_BracU%20Esports%20Tournament%20Management%20System_CSE370_Lab_7_Report_Spring2025.pdf
 /Project ER & Schema/
 ```
  

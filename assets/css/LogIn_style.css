@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.ComeOnBoss{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/login-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+}
+.Form-box{
+    width: 500px;
+    height: 680px;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgba(49, 216, 238, 0.75);
+    border-radius: 20px;
+    padding: 5px; 
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(105, 229, 245, 0.2);
+}
+.button-box{
+    width: 250px;
+    position: relative;
+    margin: 35px auto;
+    border-radius: 10%; 
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+
+}
+#btn{
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #07a6bc;
+    border-radius: 10%;
+    transition: .5s;
+
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 120%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 10px;
+    border-right: 0;
+    border-bottom: 1px solid #4FB3BF;
+    outline: none;
+    background: transparent;
+    color: #333;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #07a6bc;
+    color: white;
+    box-shadow: 0 4px 6px rgba(7, 166, 188, 0.2);
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    background: #33bdd6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(126, 225, 238, 0.3);
+}
+.check-box{
+    margin: 40px 20px 40px 0;
+}
+.span{
+    color: #777;
+    font-size: 18px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+    transition: .5s;
+}
+#Sign-Up{
+    left: 450px;
+    transition: .5s;
+}

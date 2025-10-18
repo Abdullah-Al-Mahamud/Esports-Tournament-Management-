@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    opacity: 0.8;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header.sticky{
+    background: #000000;
+    box-shadow:  5px 20px rgba(89,67,58,0.9);
+}
+.logo-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    margin-top: 50px;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    width: 300px; 
+}
+
+
+.logo:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out;
+} 
+header .logo{
+    position: absolute;
+    left: 90px;
+    top:0px;
+    font-size: 2.5em;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+header .nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+header ul{
+    display: flex;
+    gap: 15px;
+}
+header a{
+    color: white;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+} 
+header ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    left: 800px;
+    top: -10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+header ul li a:hover{
+    background: rgb(3, 118, 133);
+    color: white;
+    box-shadow: 0 0 10px rgb(159, 157, 157);
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 60%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 4.5em;
+    color: white;
+    Letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+.banner .bg .content p{
+    font-size: 1.4em;
+    color: white;
+    Letter-spacing: 1.2px;
+    font-family: "Poppins", sans-serif;
+    max-width: 800px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 20px 0;
+    border: 1px solid paleturquoise;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    Letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+.banner .bg .content a:hover{
+    background: rgb(3, 118, 133);
+    color: white;
+    border: black;
+    box-shadow: paleturquoise;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh-100px);
+    padding: 0px 150px;
+    margin: 40px auto;
+}
+
+.about, .admin-container {
+    flex: 1;
+    margin: 20px;
+}
+
+.about {
+    flex: 2;
+    overflow-y: auto;
+}
+
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.about .contentBx p{
+    max-width: 800px;
+    text-align: justify;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid paleturquoise;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about .contentBx a:hover{
+    background: rgb(3, 118, 133);
+    color: white;
+    border: black;
+    box-shadow: paleturquoise;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+.admin {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.admin img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.admin p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: paleturquoise;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+    border: none !important;
+    background-color: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    font-weight: normal;
+}
+
+.email-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

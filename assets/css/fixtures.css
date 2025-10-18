@@ -1,0 +1,63 @@
+.fixtures-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.tournament-section {
+    background: rgba(7, 166, 188, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(7, 166, 188, 0.2);
+}
+.tournament-name {
+    color: #07a6bc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fixture-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.fixture-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.round {
+    font-weight: bold;
+    color: #07a6bc;
+    min-width: 100px;
+}
+.team {
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+}
+.vs {
+    margin: 0 20px;
+    color: #07a6bc;
+    font-weight: bold;
+}
+.date {
+    color: rgba(255, 255, 255, 0.7);
+    min-width: 120px;
+    text-align: right;
+}
+.no-fixtures {
+    text-align: center;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.generate-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(7, 166, 188, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(7, 166, 188, 0.2);
+}

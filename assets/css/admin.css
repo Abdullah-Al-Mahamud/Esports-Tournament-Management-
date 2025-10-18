@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    color: white;
+    background-image: url('../images/all_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Navigation */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(7, 166, 188, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.system-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Form Containers */
+.form-container {
+    background: rgba(7, 166, 188, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: white;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #07a6bc;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+textarea.form-control {
+    color: white;
+}
+
+input[type="text"].form-control,
+input[type="number"].form-control,
+input[type="email"].form-control,
+input[type="password"].form-control {
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #07a6bc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #058da0;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #bb2d3b;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+th {
+    background: rgba(7, 166, 188, 0.2);
+    font-weight: 600;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Edit Forms */
+.edit-form-container {
+    background: rgba(40, 205, 227, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    display: none;
+}
+
+.edit-form-container h4 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    animation: fadeOut 0.5s ease-in-out 3s forwards;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    min-width: 300px;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.2);
+    border-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background: rgba(220, 53, 69, 0.2);
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .nav-buttons {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .main-buttons, .system-buttons {
+        justify-content: center;
+    }
+    
+    .system-buttons {
+        margin-top: 15px;
+    }
+}
+
+/* Select Dropdowns */
+select.form-control {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: 8px 10px;
+    color: white;
+}
+
+select.form-control option {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    color: white;
+}
+
+/* Placeholder Color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Small Text and Links */
+small, .form-text {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+a {
+    color: #07a6bc;
+}
+
+a:hover {
+    color: #058da0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}

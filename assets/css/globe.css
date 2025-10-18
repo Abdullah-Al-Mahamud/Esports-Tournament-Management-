@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    opacity: 0.8;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header.sticky {
+    background: #000000;
+    box-shadow: 5px 20px rgba(89, 67, 58, 0.9);
+}
+
+.logo {
+    position: absolute;
+    left: 90px;
+    top: 0;
+    font-size: 2.5em;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+header ul {
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    background: rgb(3, 118, 133);
+    color: white;
+    box-shadow: 0 0 10px rgb(159, 157, 157);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.banner .bg .content {
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2 {
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p {
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.banner .bg .content a {
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 20px 0;
+    border: 1px solid paleturquoise;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover {
+    background: rgb(3, 118, 133);
+    color: white;
+    border: black;
+    box-shadow: paleturquoise;
+}
+
+#about-us {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about-us img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 10px;
+}
+
+#team-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 2.2em;
+        left: 50px;
+    }
+
+    header ul li a {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .banner .bg .content h2 {
+        font-size: 3em;
+    }
+
+    .banner .bg .content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        font-size: 2em;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .banner {
+        padding: 50px;
+    }
+
+    .banner .bg .content h2 {
+        font-size: 2.5em;
+    }
+
+    .banner .bg .content p {
+        font-size: 0.9em;
+    }
+
+    .banner .bg .content a {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    header ul li a {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .banner .bg .content h2 {
+        font-size: 2em;
+    }
+
+    .banner .bg .content p {
+        font-size: 0.8em;
+    }
+
+    .banner .bg .content a {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header ul li a {
+        font-size: 0.7em;
+        padding: 6px;
+    }
+
+    .banner .bg .content h2 {
+        font-size: 1.5em;
+    }
+
+    .banner .bg .content p {
+        font-size: 0.7em;
+    }
+
+    .banner .bg .content a {
+        padding: 10px 15px;
+    }
+}

@@ -132,7 +132,7 @@ _Add screenshots of your UI here:_
 
 Project report and ER diagram are available in:
 ```
-
+Go to the Project Report.pdf file for Report and ER diagram
 ```
  
 

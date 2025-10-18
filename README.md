@@ -134,18 +134,7 @@ Project report and ER diagram are available in:
 ```
 /Project ER & Schema/
 ```
-
----
-
-## 🧑‍💻 Contributors
-
-- **Group 16 – BRAC University CSE370 Lab 7 (Spring 2025)**
-- Supervisor: _[Insert Faculty Name]_
-- Members:
-  - [Member 1 Name]
-  - [Member 2 Name]
-  - [Member 3 Name]
-  - [Member 4 Name]
+ 
 
 ---
 
